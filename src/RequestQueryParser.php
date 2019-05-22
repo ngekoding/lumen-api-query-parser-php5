@@ -60,8 +60,8 @@ class RequestQueryParser implements RequestQueryParserInterface
     }
     protected function parseConnections($request)
     {
-        if ($request->has('connection')) {
-            foreach ($request->get('connection') as $connection) {
+        if ($request->has('includes')) {
+            foreach ($request->get('includes') as $connection) {
                 $this->requestParams->addConnection(new Connection($connection));
             }
         }
