@@ -1,5 +1,11 @@
 # Lumen API query parser
-[ ![Codeship Status for ngabor84/lumen-api-query-parser](https://app.codeship.com/projects/8fd47630-122f-0135-959f-3611331b8dcf/status?branch=master)](https://app.codeship.com/projects/216941)
+### !!! I have edit the original package to support php5 !!!
+
+The original package go here:
+- https://github.com/ngabor84/lumen-api-query-parser
+- https://packagist.org/packages/ngabor84/lumen-api-query-parser
+
+If you need php5 support, so you can use this package. But if you already using php7, please use the original package.
 
 ## Description
 This is a simple request query parameter parser for REST-APIs based on Laravel's Lumen framework.
@@ -48,7 +54,7 @@ This is a simple request query parameter parser for REST-APIs based on Laravel's
 ## Query syntax
 
 ### Eager loading
-Q: /users?connection[]=profile  
+Q: /users?includes[]=profile  
 R: will return the collection of the users with their profiles included
 
 ### Filtering
@@ -61,15 +67,15 @@ __Available filter options__
 | ------------- | --------------------- | ------- |
 | ct            | String contains       | name:ct:Peter |
 | nct           | String NOT contains   | name:nct:Peter |
-| sw	        | String starts with    | username:sw:admin |
-| ew	        | String ends with      | email:ew:gmail.com |
-| eq	        | Equals                | level:eq:3 |
-| ne	        | Not equals            | level:ne:4 |
-| gt	        | Greater than          | level:gt:2 |
-| ge	        | Greater than or equal | level:ge:3 |
-| lt	        | Lesser than           | level:lt:4 |
-| le	        | Lesser than or equal  | level:le:3 |
-| in	        | In array              | level:in:1&#124;2&#124;3 |
+| sw            | String starts with    | username:sw:admin |
+| ew            | String ends with      | email:ew:gmail.com |
+| eq            | Equals                | level:eq:3 |
+| ne            | Not equals            | level:ne:4 |
+| gt            | Greater than          | level:gt:2 |
+| ge            | Greater than or equal | level:ge:3 |
+| lt            | Lesser than           | level:lt:4 |
+| le            | Lesser than or equal  | level:le:3 |
+| in            | In array              | level:in:1&#124;2&#124;3 |
 
 ### Sorting
 Q: /users?sort[]=name:ASC   
