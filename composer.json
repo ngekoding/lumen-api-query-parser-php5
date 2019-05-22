@@ -2,7 +2,7 @@
     "name": "ngekoding/lumen-api-query-parser-php5",
     "description": "A query parser for REST-APIs based on laravel's lumen framework",
     "keywords": ["lumen", "query parser", "api"],
-    "homepage": "https://github.com/ngekoding/lumen-api-query-parser",
+    "homepage": "https://github.com/ngekoding/lumen-api-query-parser-php5",
     "type": "library",
     "license": "MIT",
     "authors": [
